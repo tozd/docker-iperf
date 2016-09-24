@@ -9,4 +9,4 @@ docker stop "${NAME}" || true
 sleep 1
 docker rm "${NAME}" || true
 sleep 1
-docker run --detach=true --restart=always --name "${NAME}" --publish "5001:$SERVER_IP:5001/tcp" tozd/iperf
+docker run --detach=true --restart=always --name "${NAME}" --publish "$SERVER_IP:5001:5001/tcp" tozd/iperf
