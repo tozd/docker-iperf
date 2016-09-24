@@ -1,0 +1,3 @@
+#!/bin/bash -e
+
+exec /usr/bin/iperf -s -p 5001 2>&1
