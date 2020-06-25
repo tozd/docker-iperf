@@ -1,4 +1,4 @@
-FROM tozd/runit:trusty
+FROM tozd/runit:ubuntu-trusty
 
 EXPOSE 5001/tcp
 
