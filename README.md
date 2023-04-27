@@ -22,3 +22,9 @@ Available as:
 ## Ports
 
 - `5001/tcp`: HTTP port on which iperf listens.
+
+## Description
+
+The TCP window size option can be set by the environment variable
+`TCP_WINDOW_SIZE`. Most other options can be set by an environment variable
+`IPERF_<long option name>`, such as `IPERF_BANDWIDTH`.
