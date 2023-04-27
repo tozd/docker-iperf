@@ -15,6 +15,6 @@ iperf --client docker --port 5001 --reportstyle C --time 10 | grep -q ,
 result=$?
 
 echo "Stopping Docker image"
-docker stop test
+docker stop test || exit 2
 
 exit "$result"
