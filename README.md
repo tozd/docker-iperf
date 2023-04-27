@@ -11,6 +11,14 @@ Available as:
 
 [`tozd/base`](https://gitlab.com/tozd/docker/base) ← [`tozd/runit`](https://gitlab.com/tozd/docker/runit) ← `tozd/iperf`
 
+## Tags
+
+- `ubuntu-trusty`: iperf 2.0.5
+- `ubuntu-xenial`: iperf 2.0.5
+- `ubuntu-bionic`: iperf 2.0.10
+- `ubuntu-focal`: iperf 2.0.13
+- `ubuntu-jammy`: iperf 2.1.5
+
 ## Ports
 
 - `5001/tcp`: HTTP port on which iperf listens.
