@@ -28,3 +28,8 @@ Available as:
 The TCP window size option can be set by the environment variable
 `TCP_WINDOW_SIZE`. Most other options can be set by an environment variable
 `IPERF_<long option name>`, such as `IPERF_BANDWIDTH`.
+
+## GitHub mirror
+
+There is also a [read-only GitHub mirror available](https://github.com/tozd/docker-iperf),
+if you need to fork the project there.
