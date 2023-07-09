@@ -1,6 +1,8 @@
-FROM registry.gitlab.com/tozd/docker/runit:ubuntu-focal
+FROM registry.gitlab.com/tozd/docker/dinit:ubuntu-focal
 
 EXPOSE 5001/tcp
+
+ENV DINIT_JSON_STDOUT=0
 
 RUN apt-get update -q -q && \
   apt-get --yes --force-yes install iperf && \
