@@ -17,7 +17,7 @@ echo "Preparing"
 apk add --no-cache iperf
 
 echo "Running Docker image"
-docker run -d --name test -p 5001:5001 "${CI_REGISTRY_IMAGE}:${TAG}"
+docker run -d --name test -p 5001:5001 -e "LOG_TO_STDOUT=1" "${CI_REGISTRY_IMAGE}:${TAG}"
 trap cleanup EXIT
 
 echo "Sleeping"
