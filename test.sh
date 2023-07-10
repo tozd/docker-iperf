@@ -3,15 +3,19 @@
 set -e
 
 cleanup() {
+  echo "Logs"
+  docker logs test || true
+
   echo "Stopping Docker image"
-  docker stop test
+  docker stop test || true
+  docker rm -f test
 }
 
 echo "Preparing"
 apk add --no-cache iperf
 
 echo "Running Docker image"
-docker run -d --name test --rm -p 5001:5001 "${CI_REGISTRY_IMAGE}:${TAG}"
+docker run -d --name test -p 5001:5001 "${CI_REGISTRY_IMAGE}:${TAG}"
 trap cleanup EXIT
 
 echo "Sleeping"
