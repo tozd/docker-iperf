@@ -26,3 +26,4 @@ sleep 10
 echo "Testing"
 # We check if there is any comma in succesful CSV output. On errors there is no CSV output.
 iperf --client docker --port 5001 --reportstyle C --time 10 | grep -q ,
+echo "Success"
