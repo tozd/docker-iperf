@@ -29,6 +29,8 @@ The TCP window size option can be set by the environment variable
 `TCP_WINDOW_SIZE`. Most other options can be set by an environment variable
 `IPERF_<long option name>`, such as `IPERF_BANDWIDTH`.
 
+Docker image logs output to stdout and stderr. All stdout output is JSON.
+
 ## GitHub mirror
 
 There is also a [read-only GitHub mirror available](https://github.com/tozd/docker-iperf),
