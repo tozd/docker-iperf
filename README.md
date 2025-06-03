@@ -18,6 +18,7 @@ Available as:
 - `ubuntu-bionic`: iperf 2.0.10
 - `ubuntu-focal`: iperf 2.0.13
 - `ubuntu-jammy`: iperf 2.1.5
+- `ubuntu-noble`: iperf 2.1.9
 
 ## Ports
 
